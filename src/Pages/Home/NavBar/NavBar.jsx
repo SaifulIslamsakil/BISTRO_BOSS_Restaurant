@@ -9,12 +9,12 @@ const NavBar = () => {
         </NavLink>
        </li>
        <li>
-        <NavLink>
+        <NavLink to={"/Contact-us"}>
         CONTACT us
         </NavLink>
        </li>
        <li>
-        <NavLink>
+        <NavLink to="/Dashboard">
         DASHBOARD
         </NavLink>
        </li>
@@ -24,7 +24,7 @@ const NavBar = () => {
         </NavLink>
        </li>
        <li>
-        <NavLink>
+        <NavLink to="/ourshop/salad">
         Our Shop
         </NavLink>
        </li>

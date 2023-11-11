@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useManuData from "../../Hooks/useManuData";
 
 
@@ -18,12 +19,14 @@ const ManuItem = ({ manuCategory, }) => {
                         <p>{category.recipe}</p>
                         <p>{category.category}</p>
                     </div>
-                    <h4 className="text-2xl font-bold text-yellow-600">{category.price}</h4>
+                    <h4 className="text-2xl font-bold text-yellow-600">${category.price}</h4>
                 </div>)}
             </div>
             <div className="flex justify-center">
-           <button className=" rounded-lg  text-xl font-bold text-yellow-600 border-yellow-600 border-b-4 py-3 px-5 hover:bg-black hover:text-white">ORDER YOUR FAVOURITE FOOD</button>
-           </div>
+                <Link to={`/ourshop/${manuCategory}`}>
+                    <button className=" rounded-lg  text-xl font-bold text-yellow-600 border-yellow-600 border-b-4 py-3 px-5 hover:bg-black hover:text-white">ORDER YOUR FAVOURITE FOOD</button>
+                </Link>
+            </div>
         </div>
 
     );

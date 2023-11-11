@@ -26,7 +26,7 @@ const Manu = () => {
                         <p>{category.recipe}</p>
                         <p>{category.category}</p>
                     </div>
-                    <h4 className="text-2xl font-bold text-yellow-600">{category.price}</h4>
+                    <h4 className="text-2xl font-bold text-yellow-600">${category.price}</h4>
                 </div>)
 
                 }
